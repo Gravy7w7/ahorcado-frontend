@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+# Ahorcado Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend del proyecto distribuido **Ahorcado**, desarrollado para la materia de Sistemas Distribuidos.  
+La aplicación permite que múltiples clientes se conecten a un servidor mediante WebSockets para jugar partidas del clásico juego del ahorcado desde una interfaz web interactiva.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Descripción
 
-## React Compiler
+Este proyecto consiste en el frontend de un sistema distribuido basado en el juego del ahorcado.  
+Los usuarios pueden ingresar un nombre, conectarse al servidor y participar en una partida realizando intentos para descubrir la palabra secreta.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La comunicación en tiempo real entre clientes y servidor se realiza mediante WebSockets.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Objetivo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Desarrollar un sistema distribuido funcional para la materia de Sistemas Distribuidos, implementando comunicación en tiempo real entre múltiples clientes y un servidor.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Problema que resuelve
+
+El proyecto demuestra cómo múltiples clientes pueden interactuar en tiempo real dentro de una aplicación web distribuida utilizando WebSockets, permitiendo sincronización de eventos y comunicación instantánea entre servidor y clientes.
+
+---
+
+## Tecnologías utilizadas
+
+- ⚛️ React
+- 📘 TypeScript
+- 🎨 Ant Design
+- ⚡ Vite
+
+---
+
+## Características principales
+
+- Registro de nombre de usuario
+- Juego interactivo del ahorcado
+- Selección de letras
+- Comunicación en tiempo real mediante WebSockets
+- Máximo de 6 intentos por partida
+- Interfaz web sencilla e interactiva
+
+---
+
+## Instalación y ejecución
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/Gravy7w7/ahorcado-frontend.git
 ```
+### 2. Entrar a la carpeta del proyecto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd ahorcado-frontend
 ```
+### 3. Instalar dependencias
+
+```bash
+npm install
+```
+### 4. Ejecutar el proyecto
+
+```bash
+npm run dev
+```
+---
+
+## Requisitos
+
+- Node.js **v22.14.0**
+- npm instalado
+---
+
+## Estado del proyecto
+
+✅ Finalizado y jugable. El proyecto aún puede seguir mejorándose y optimizándose
+
+
+
+
