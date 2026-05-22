@@ -1,3 +1,4 @@
-const socket = new WebSocket('ws://localhost:3000');
+
+const socket = new WebSocket(import.meta.env.VITE_WS_URL);
 
 export default socket;
