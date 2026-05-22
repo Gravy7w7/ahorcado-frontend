@@ -5,7 +5,7 @@ import type { GameMessage } from "../types/game";
 import "./css/styles.css";
 import { HumanDrawing } from "../components/humanDrawing";
 
-const { Title, Text } = Typography;
+const { Text } = Typography;
 
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
